@@ -1,0 +1,21 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".cache/*.tsbuildinfo", "build/**"],
+      "outputLogs": "new-only"
+    },
+    "dev": {
+      "dependsOn": ["build"],
+      "outputs": [],
+      "cache": false,
+      "persistent": true
+    },
+    "typecheck": {
+      "cache": false,
+      "outputs": []
+    }
+  }
+}

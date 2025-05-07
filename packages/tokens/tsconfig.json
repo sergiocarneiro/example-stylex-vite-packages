@@ -1,0 +1,21 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": "src",
+    "outDir": "build",
+    "declarationDir": "build",
+    "tsBuildInfoFile": ".cache/tsconfig.tsbuildinfo",
+    "lib": ["esnext"],
+    "target": "es2022",
+    "module": "es2022",
+    "moduleResolution": "node", // we need CommonJS to support StyleX imports when sharing the package, otherwise types will not work
+    "moduleDetection": "force",
+    "composite": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationMap": true,
+    "strict": true
+  }
+}

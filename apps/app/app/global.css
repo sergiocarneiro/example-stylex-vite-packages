@@ -1,0 +1,9 @@
+@stylex stylesheet;
+
+@layer priority1 {
+  main {
+    min-height: "100dvh";
+    padding: "2rem";
+    font-family: "system-ui";
+  }
+}

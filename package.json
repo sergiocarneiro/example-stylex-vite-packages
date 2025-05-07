@@ -1,0 +1,18 @@
+{
+  "name": "example-stylex-vite-packages",
+  "author": "Sérgio Carneiro",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": "https://github.com/sergiocarneir/example-stylex-vite-packages",
+  "type": "module",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --filter app"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.3",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "packageManager": "pnpm@10.6.1"
+}

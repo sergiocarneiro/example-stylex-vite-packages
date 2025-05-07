@@ -1,0 +1,20 @@
+{
+  "name": "@acme/tokens",
+  "version": "1.0.0",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "build"
+  ],
+  "exports": {
+    "./reference.stylex": "./build/reference.stylex.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --noEmit --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@stylexjs/stylex": "~0.12.0"
+  }
+}

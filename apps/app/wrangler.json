@@ -1,0 +1,13 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+ {
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "app",
+	"compatibility_date": "2025-04-04",
+	"upload_source_maps": true,
+	"main": "./workers/app.ts",
+	"assets": { "directory": "./public/" },
+	"workers_dev": true
+}
